@@ -1,0 +1,100 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  background: #ddd;
+  text-align: center;
+}
+
+#content {
+  margin: 0px auto;
+  text-align: left;
+  width: 600px;
+  background: white;
+  padding: 20px;
+}
+
+span.edit, span.cancel, span.remove {
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+span.edit:hover, span.cancel:hover, span.remove:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+#username-form { position: relative; font-size: 120%; }
+#username-form input { display: inline-block; font-size: 120%; }
+#username-form div { display: inline-block; }
+
+.list {
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  margin: 5px 0;
+  padding: 5px;
+  background: #eee;
+  font-size: 120%;
+}
+
+.rag-item .remove { float: right; }
+
+#subscriptions li {
+  overflow: auto;
+  width: 100%
+}
+#subscriptions label {
+  display: inline-block;
+}
+
+#subscriptions li button { float: right;}
+#subscriptions form { padding: 20px; }
+#subscriptions form .field { margin: 10px 0; }
+
+#subscriptions form label {
+  display: inline-block;
+  width: 100px;
+  margin-right: 10px;
+  text-align: right;
+  color: #555;
+  font-size: 150%;
+}
+
+#subscriptions form label.error {
+  padding: 2px;
+  color: red;
+  display: block;
+  width: auto;
+  text-align: center;
+  font-size: 100%;
+}
+
+#subscriptions form input {
+  display: inline-block;
+  width: 260px;
+  font-size: 150%;
+}
+
+#subscriptions form .submit {
+  text-align: center;
+}
+
+#subscriptions form .submit button {
+  display: inline-block;
+  font-size: 150%;
+  padding; 5px;
+}

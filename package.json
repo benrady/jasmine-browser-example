@@ -1,0 +1,17 @@
+{
+  "name": "jasmine-browser-example",
+  "description": "An example of how to use Jasmine to test a web app",
+  "version": "1.0.0",
+  "author": "Ben Rady <benrady@gmail.com>",
+  "repository": {"type": "git", "url": "http://git@github.com:benrady/jasmine-browser-example.git"},
+  "dependencies": {
+    "express": "2.3.2"
+  },
+  "devDependencies": {
+    "jsdom": "0.2.0",
+    "horseman": ">= 0.2.1"
+  },
+  "main": "./server",
+  "engines": {"node": ">= 0.4.0"}
+}
+

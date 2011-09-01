@@ -1,0 +1,10 @@
+# Jasmine example project
+
+# To run the tests
+
+(install node.js 0.4.x and npm if you haven't already)
+https://github.com/joyent/node/wiki/Installation
+
+$ npm install jezebel --global
+$ npm install
+$ jezebel

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Siren</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/typography.css">
+    <script language="javascript" type="text/javascript" src="/js/utils/jquery-1.6.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/js/utils/jquery.validate.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/js/utils/modit.js"></script>
+    <script language="javascript" type="text/javascript" src="/js/utils/underscore-min.js"></script>
+    <script language="javascript" type="text/javascript" src="/js/utils/swurl.js"></script>
+    <script language="javascript" type="text/javascript" src="/js/siren.js"></script></script>
+    <script src="http://trend/piwik.js"></script>
+  </head>
+  <body>
+    <div class="navbar"></div>
+    <ul id="toolbar"> </ul>
+    <div id="content">
+      <h1>Welcome to Siren</h1>
+        <p id="documentation"><a href="/docs.html">Read the Documentation</a></p>
+        <form id="username-form">
+          <div>
+            <label for="username-field">Your Username</label>
+            <input name="username" id="username-field" type="text" />
+            <button type="button">View Your Subscriptions</button>
+          </div>
+        </form>
+        <div id='subscriptions' style='display:none'>
+          <h2>RAG Subscriptions</h2>
+          <ul id="rag-list" class="list">
+          </ul>
+          <form id="add-rag">
+            <div class="field">
+              <label for="server-field">Server</label>
+              <input type='text' name='server' placeholder='monitoring'></input>
+            </div>
+            <div class="field">
+              <label for="port-field">Port</label>
+              <input type='text' name='port' size='5' placeholder='32000'></input>
+            </div>
+            <div class="field">
+              <label for="stream-field">Stream</label>
+              <input type='text' name='stream' placeholder='MyStreamName'></input>
+            </div>
+            <div class='submit'>
+              <button name='Submit'>Add New Subscription</button>
+            </div>
+          </form>
+
+          <h2>Threshold Subscriptions</h2>
+          <ul id="threshold-list" class="list">
+          </ul>
+          <form id="add-threshold">
+            <div class="field">
+              <label for="server-field">Server</label>
+              <input type='text' name='server' placeholder='monitoring'></input>
+            </div>
+            <div class="field">
+              <label for="port-field">Port</label>
+              <input type='text' name='port' size='5' placeholder='32000'></input>
+            </div>
+            <div class="field">
+              <label for="stream-field">Stream</label>
+              <input type='text' name='stream' placeholder='MyStreamName'></input>
+            </div>
+            <div class="field">
+              <label for="topic-field">Topic</label>
+              <input type='text' name='topic' placeholder='Disk Used'></input>
+            </div>
+            <div class="field">
+              <label for="value-field">Value</label>
+              <input type='text' name='value' placeholder='80'></input>
+            </div>
+            <div class='submit'>
+              <button name='Submit'>Add New Subscription</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <script type="text/javascript">
+      $(function() {
+        siren.start();
+      });
+    try {
+      var piwikTracker = Piwik.getTracker("http://trend/piwik.php", 18);
+      piwikTracker.trackPageView();
+      piwikTracker.enableLinkTracking();
+    } catch( err ) { }
+</script> 
+  </body>
+</html>
